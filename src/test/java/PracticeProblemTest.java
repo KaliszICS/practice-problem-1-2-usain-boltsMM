@@ -5,7 +5,7 @@ import java.io.*;
 public class PracticeProblemTest {
 
    @Test
-   public void testOutput()
+   public void q1Test()
    {
      PrintStream originalOut = System.out;
      ByteArrayOutputStream bos = new ByteArrayOutputStream();
@@ -15,35 +15,79 @@ public class PracticeProblemTest {
      PracticeProblem.q1();
 
      // assertion
-     assertEquals("There once was a man from St. Ives.\n", bos.toString());
+     assertEquals("10\n30\n", bos.toString());
 
      // undo the binding in System
      System.setOut(originalOut);
    }
 
    @Test
-   public void testInputandOutput()
+   public void q2Test()
    {
-      String data = "Users Input";
-      System.setIn(new ByteArrayInputStream(data.getBytes()));
-      
-      PrintStream originalOut = System.out;
-      ByteArrayOutputStream bos = new ByteArrayOutputStream();
-      System.setOut(new PrintStream(bos));
+     PrintStream originalOut = System.out;
+     ByteArrayOutputStream bos = new ByteArrayOutputStream();
+     System.setOut(new PrintStream(bos));
 
-      // action
-      PracticeProblem.q1();
+     // action
+     PracticeProblem.q2();
 
-      // assertion
-      assertEquals("There once was a man from St. Ives.\n", bos.toString());
+     // assertion
+     assertEquals("3\n1\n", bos.toString());
 
-      // undo the binding in System
-      System.setOut(originalOut);
+     // undo the binding in System
+     System.setOut(originalOut);
    }
 
    @Test
-   public void testQ3()
+   public void q3Test()
    {
-     
+     PrintStream originalOut = System.out;
+     ByteArrayOutputStream bos = new ByteArrayOutputStream();
+     System.setOut(new PrintStream(bos));
+
+     // action
+     PracticeProblem.q3();
+
+     // assertion
+     assertEquals("1.0192307692307692\n", bos.toString());
+
+     // undo the binding in System
+     System.setOut(originalOut);
    }
+
+   @Test
+   public void q4Test()
+   {
+     PrintStream originalOut = System.out;
+     ByteArrayOutputStream bos = new ByteArrayOutputStream();
+     System.setOut(new PrintStream(bos));
+
+     // action
+     PracticeProblem.q4();
+
+     // assertion
+     assertEquals("20\n", bos.toString());
+
+     // undo the binding in System
+     System.setOut(originalOut);
+   }
+
+   @Test
+   public void q5Test()
+   {
+     PrintStream originalOut = System.out;
+     ByteArrayOutputStream bos = new ByteArrayOutputStream();
+     System.setOut(new PrintStream(bos));
+
+     // action
+     PracticeProblem.q5();
+
+     // assertion
+     assertEquals("8.5\n", bos.toString());
+
+     // undo the binding in System
+     System.setOut(originalOut);
+   }
+
+   
 }
