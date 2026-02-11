@@ -9,23 +9,38 @@ public class PracticeProblem {
 	}
 
 	public static void q1() {
-		//Write question 1 code here
+		int two = 2;
+		int five = 5;
+		int three = 3; 
+		System.out.println(two + five + three);
+		System.out.println(two*five*three);
 	}
 
 	public static void q2() {
-		//Write question 2 code here
+		int ten = 10;
+		int tree = 3;
+		System.out.println(ten/tree);
+		System.out.println(ten%tree);
 	}
 
 	public static void q3() {
-		//Write question 3 code here
+		double fithree = 5.3;
+		double fitwo = 5.2;
+		System.out.println(fithree/fitwo);
 	}
 
 	public static void q4() {
-		//Write question 4 code here
+		int twoo = 2;
+		int threee = 3;
+		int four = 4; 
+		int message = twoo + threee;
+		System.out.println(message*four);
 	}
 
 	public static void q5() {
-		//Write question 5 code here
+		int ive = 5;
+		System.out.println(ive +3.5);
+
 	}
 
 }
